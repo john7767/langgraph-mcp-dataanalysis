@@ -4,7 +4,7 @@ from mcp.client.stdio import stdio_client
 from langchain_mcp_adapters.tools import load_mcp_tools
 from langchain_mcp_adapters.prompts import load_mcp_prompt
 from langgraph.prebuilt import create_react_agent
-from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
 
 from dotenv import load_dotenv
 import os
@@ -12,9 +12,20 @@ import os
 load_dotenv()
 os.getenv("OPENAI_API_KEY")
 
-model = ChatOpenAI(model="gpt-4o")
+model = ChatOllama(model="llama3.2:latest")
 
-server_params = StdioServerParameters(
+server_params = StdioServerParameters(smdmreo0
+
+
+
+
+
+1414
+
+
+
+smdmreo0
+
     command="python",
     args=["./data_server.py"],
 )
